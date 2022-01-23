@@ -13,7 +13,6 @@ function onLoginSubClick(event) {
     const username = loginInput.value;
     localStorage.setItem("username", username);
     paintingGreetings(username)
-    console.log(username);
 }
 
 function paintingGreetings(username) {
