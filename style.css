@@ -93,8 +93,7 @@ img {
       .size {
           float: left;
           margin-left: 9%;
-          justify-content: center;
-          align-items: center;
+          
       }
 
       .full:after {
