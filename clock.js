@@ -1,4 +1,4 @@
-const clock = document.querySelector("h2");
+const clock = document.querySelector("span");
 const day = document.querySelector("h3");
 const week = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
 

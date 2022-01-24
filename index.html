@@ -9,51 +9,55 @@
 </head>
 <body>
     <!-- login form -->
-    <form class="hidden" id="login-form">
-        <input required maxlength="15" type="text" placeholder="What is your name?">
-        <button>ENTER</button>
-    </form>
-    <h1 class="hidden" id="greeting"></h1>
+    <div class="login">    
+        <form class="hidden" id="login-form">
+            <input required maxlength="15" type="text" placeholder="What is your name?">
+            <button>ENTER</button>
+        </form>
+        <h1 class="hidden" id="greeting"></h1>
+        <span class="big-clock">00 : 00 . 00</span>
+        <h3>0000.00.00. ___</h3>
+    </div>
 
-    <!-- user 1 -->
-    <h2>00 : 00 . 00</h2>
-    <h3>0000.00.00. ___</h3>
-
-    <!-- user 2 -->
-    <div class="full">
-        <div class="size card">
+    <!-- user -->
+    <div class="user">
+        <!-- userForm 1 -->
+        <div class="userToDo card">
             <div>            
                 <form id="todo-form">
                 <h3>To Do List</h3>
                 <input type="text" placeholder="Write a To Do and Press Enter">
-                </form></div>
-            <div>
-                <ul id="todo-list"></ul>
+                </form>
+                <div class="todo-list-div">
+                    <ul id="todo-list"></ul>
+                </div>
             </div>
         </div>
     
-        <!-- user 3 -->
-        <div class="card size">
-            Magic Card
+        <!-- userCalendar 2-->
+        <div class="card">
+            <div>
+                <h3>Calendar</h3>
+                <div><input type="date"></div>
+            </div>
         </div>
     
     
-        <!-- user 4 -->
-        <div class="card size">
-            Magic Card
+        <!-- userBookmark-->
+        <div class="card">
         </div>
     </div>
 
     <!-- foot -->
-    
-    <div id="weather">
-        <span></span>
-        <span></span>
-    </div>
-
-    <div id="quote">
-        <span></span>
-        <span></span>
+    <div class="foot">
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div>
+        <div id="quote">
+            <span></span>
+            <span></span>
+        </div>
     </div>
 
     <script src="greeting.js"></script>
