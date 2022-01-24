@@ -17,15 +17,15 @@ function onLoginSubClick(event) {
 
 function paintingGreetings(username) {
     greeting.classList.remove(HIDDEN_CLASSNAME)
-    greeting.innerText = `HELLO ${username}`;
+    greeting.innerText = `HELLO, ${username}`;
 }
 
-const saveUsername =  localStorage.getItem("USERNAME_KEY");
+const saveUsername =  localStorage.getItem(USERNAME_KEY);
 if (saveUsername === null) {
     // show the farm
     loginForm.classList.remove(HIDDEN_CLASSNAME)
     loginForm.addEventListener("submit", onLoginSubClick);
 } else {
     //show greeting
-    paintingGreetings(saveUsername)
+    paintingGreetings(saveUsername);
 }
